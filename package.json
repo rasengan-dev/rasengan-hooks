@@ -1,5 +1,5 @@
 {
-  "name": "@rasengan/hooks",
+  "name": "@rasenganjs/hooks",
   "private": false,
   "version": "1.0.0",
   "type": "module",
@@ -19,14 +19,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rasengan/rasengan-hooks",
+    "url": "https://github.com/rasengan/rasengan-hooks.git",
     "issues": "https://github.com/rasengan/rasengan-hooks/issues"
   },
   "license": "MIT",
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "pack": "npm pack --pack-destination ./../../packages/@rasengan/hooks"
+    "pack": "npm pack --pack-destination ./../../packages/@rasengan/hooks",
+    "deploy": "npm publish --access public"
   },
   "peerDependencies": {
     "react": "^18.2.0"
